@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%, 60%);
+  padding: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  cursor: default;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 450px;
+  padding: 1.3rem;
+  background-color: hsl(215, 50%, 16%);
+  border-radius: 1rem;
+}
+
+.container h2 {
+  color: white;
+  margin: 1.5rem 0 1.5rem 0;
+}
+.container h2:hover,
+.container h2:focus {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.container section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.container section div {
+  display: flex;
+  align-items: center;
+}
+.container section div:first-child {
+  color: hsl(178, 100%, 50%);
+}
+.container section div img {
+  margin-right: 0.6rem;
+}
+
+p {
+  font-weight: 300;
+}
+.btc {
+  position: relative;
+}
+.btc-img {
+  /* width: 100%;
+  height: 100%; */
+  border-radius: 1rem;
+}
+.btc {
+  position: relative;
+}
+.btc div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 75%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+.btc div:hover,
+.btc div:focus {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btc div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container footer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-top: 2rem;
+}
+.container footer .avatar {
+  width: 3.6rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+footer .jules {
+  color: white;
+  font-weight: 400;
+}
+footer .jules:hover,
+footer .jules:focus {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .container {
+    /* width: 450px; */
+    /* margin: auto; */
+  }
+}
